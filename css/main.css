@@ -1,0 +1,320 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #f0f0f0;
+    --text-color: #3a6cf4;
+    --hover-color:#601cfc;
+}
+header {
+    background-color: var(--main-color);
+    width: 100%;
+    display: flex;
+    z-index: 10;
+    height: 40px;
+    margin: 0;
+    position: relative;
+}
+header .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.logo {
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+header .navigation {
+   
+}
+header .navigation a {
+    list-style: none;
+    display: inline;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    padding-left: 20px;
+    transition: 0.4s;
+}
+header .navigation a:hover,
+header .navigation a.active {
+    color: var(--hover-color);
+    cursor: pointer;
+}
+/*--------------  Main Section------------------*/
+section {
+    padding: 100px 0;
+}
+@media (max-width: 767px){
+    .main-sec {
+        padding: 0;
+    }
+    .main-sec .container {
+        justify-content: center;
+    }
+}
+.main-sec {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(/imges/01.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+.main-sec .overlay{
+    background-color: #00000096;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+
+}
+.main-sec h2 {
+    color: white;
+    text-transform: capitalize;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.main-sec h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 3em ;
+}
+.main-sec h3 {
+    color:#fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.main-sec .main-btn {
+    text-decoration: none;
+    color: white;
+    background-color: var(--text-color);
+    padding: 0.9375em;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin: 30px 0 ;
+    display: inline-block;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+.main-sec .main-btn:hover{
+    background-color: var(--hover-color);
+    transform: scale(1.1);
+}
+.main-sec .social-icons i {
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 20px;
+}
+/*--------------- Start Setting Box -----------------*/
+.setting.box {
+    position
+
+}
+.setting.box .fa-gear {
+
+}
+.setting.box .setting-content {
+
+}
+
+/*-------------- Section Services ------------------*/
+.cards {
+    width: 100%;
+}
+section .title {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(--hover-color);
+    font-size: 30px;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+section .containt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    justify-content: center; 
+    width: 100%;
+   
+}
+.cards .containt .card {
+    background-color: #fff;
+    width: 21em;
+    box-shadow: 0 5px 25px rgba(1,1 , 1, 15%);
+   border-radius: 10px;
+   padding: 25px;
+   margin: 15px;
+   transition: 0.5s;
+   
+}
+.cards .containt .card:hover{
+    transform: scale(1.1);
+}
+.cards .containt .card i {
+    color: var(--hover-color);
+    font-size: 6em;
+    text-align: center;
+    display: block;
+    opacity: 0.9;
+    
+}
+.cards .containt .info {
+   
+}
+.cards .containt .card h3 {
+    color: var(--hover-color);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 20px 0 20px;
+}
+.cards .containt .card p {
+    color: var(--hover-color);
+    text-align: center;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+/*--------------  Projects Section ------------------*/
+.projects {
+    background-color: #000000;
+    width: 100%;
+}
+.projects .containt {
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.projects-card {
+    background-color: #ffff;
+    border: 1px sold white;
+    min-height: 14em;
+    overflow: hidden;
+    width: 20em;
+    border-radius: 10px;
+    margin: 50px 50px 0 50px;
+    transition: 0.7s;
+
+}
+.projects-card:hover {
+    transform: scale(1.1);
+}
+.projects .proj-img img {
+    width: 100%;
+    transition: 0.7s;
+}
+.projects-card:hover .proj-img img{
+    opacity: 0.9;
+}
+.projects-card .proj-info {
+    padding: 1em;
+    text-align: center;
+}
+.projects-card .proj-category {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color:#000000;
+    font-weight: 500;
+}
+.projects-card .proj-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.projects-card .more {
+    text-decoration: none;
+    text-transform: lowercase;
+}
+.projects-card .more:hover {
+    color: var(--hover-color);
+}
+/*--------------  Contact Section ------------------*/
+
+.contact .card .fa-phone{
+    transition: 0.7s;
+}
+.contact .card:hover .fa-phone {
+    transform: rotate(360deg);
+}
+/*--------------  Footer ------------------*/
+.footer {
+    background-color: #000000;
+    color: #ffff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+.footer span {
+    color: var(--hover-color);
+}
+.footer .social-icons i {
+    margin: 0 10px;
+    cursor: pointer;
+}
+/*--------------  Perspective ------------------*/
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+ /* Small */
+@media (min-width: 768px ){
+    .container{
+        width: 750px ;
+        
+    }
+}
+/* Medium */
+@media (min-width: 992px ){
+    .container{
+        width: 970px ;
+    }
+}
+/* Large */
+@media (min-width: 1200px ){
+    .container{
+        width: 1170px ;
+    }
+}
+@media (max-width: 767){
+    
+    .container {
+        font-size: 12px;
+    }
+
+}
+
